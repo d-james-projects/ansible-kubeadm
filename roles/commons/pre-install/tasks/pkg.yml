@@ -36,5 +36,6 @@
   apt:
     name: "{{ pkgs }}"
     update_cache: yes
+    force: yes
     state: present
   with_items: "{{ pkgs }}"
